@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .database import engine, Base
+from database import engine, Base
 
 # Create database tables on startup if they don't exist
 Base.metadata.create_all(bind=engine)
